@@ -1,14 +1,10 @@
-import React from 'react';
-import bootstrap from 'bootstrap';
-
+import React from "react";
+import Logo from "./assets/logo.png";
 function App() {
   return (
-    <div className="App">
-      <h1>React work work fine</h1>
-      <Container>
-        
-      </Container>
-    </div>
+    <>
+     
+    </>
   );
 }
 
