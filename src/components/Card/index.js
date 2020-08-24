@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Skeleton from 'react-loading-skeleton';
 
-export default function Card({ movieId, movieName, image, clickable }) {
+export default function Card({ movieId, movieName, image, clickable, loading }) {
   return (
     <li className="main__card">
       {clickable ? (

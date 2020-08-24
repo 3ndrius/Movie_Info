@@ -1,5 +1,5 @@
 import React from "react";
-
+import './more.scss';
 
 const More = ({onClick, text}) => {
   return (

@@ -97,7 +97,7 @@ class Home extends Component {
           <Search handleSearch={this.searchItems} />
           <div className="container"></div>
           {this.state.loading ? (
-            <SkeletonLoading />
+            <SkeletonLoading /> 
           ) : (
             <ul className="main__list">
               {this.state.movies.map((element, i) => {
