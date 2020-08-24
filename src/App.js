@@ -1,9 +1,11 @@
 import React from "react";
-import Logo from "./assets/logo.png";
+
+import Header from "./components/Header";
 function App() {
   return (
     <>
-     
+      <Header />
+      
     </>
   );
 }

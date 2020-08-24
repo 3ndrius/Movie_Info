@@ -1,0 +1,29 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+/* SCSS HEX */
+/* SCSS Gradient */
+.header {
+  width: 100%;
+  height: 80px;
+  background: #03045eff;
+  color: #caf0f8ff;
+}
+.header__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+.header__navbar ul {
+  list-style-type: none;
+}
+.header__link img {
+  height: 60px;
+  width: auto;
+}

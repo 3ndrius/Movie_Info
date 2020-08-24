@@ -1,0 +1,14 @@
+.container {
+  max-width: 1200px;
+  width: 100%;
+  border: 1px solid red;
+  height: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

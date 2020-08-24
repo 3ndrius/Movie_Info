@@ -1,0 +1,14 @@
+@import './shared.scss';
+@import './colors.scss';
+@import './typography.scss';
+
+*,*:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: $main-fs;
+    font-family: $main-ff;
+    font-weight: $main-fw-2;
+}

@@ -1,0 +1,28 @@
+
+@import '../../assets/styles/shared.scss';
+@import '../../assets/styles/colors.scss';
+
+.header{
+    width:100%;
+    height: 80px;
+    background: $main-clr200;
+    color:$light-clr;
+    &__navbar{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        height: 100%;
+        ul{
+            list-style-type: none;
+            
+        }
+    }
+    &__link{
+
+        img{
+            height: 60px;
+            width:auto;
+        }
+    }
+}
+
