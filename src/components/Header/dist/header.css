@@ -1,5 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap");
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   width: 100%;
   height: 100%;
   padding: 0 10px;
@@ -11,8 +12,12 @@
 .header {
   width: 100%;
   height: 80px;
-  background: #03045eff;
+  background: rgba(3, 5, 94, 0.281);
   color: #caf0f8ff;
+  background-size: cover;
+  position: relative;
+  z-index: 100;
+  margin-bottom: 520px;
 }
 .header__navbar {
   display: flex;
@@ -23,7 +28,15 @@
 .header__navbar ul {
   list-style-type: none;
 }
+.header__link {
+  text-decoration: none;
+  color: #48cae4ff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
 .header__link img {
   height: 60px;
   width: auto;
+  margin: 0;
+  padding: 0;
 }

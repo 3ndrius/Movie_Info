@@ -1,0 +1,46 @@
+@import '../../assets/styles/colors.scss';
+
+.jumbotron {
+    background-size: 100%, cover !important;
+    background-position: center, center !important;
+    width: 100%;
+    height: 680px;
+    position: absolute;
+    top:-80px;
+    z-index: 0;
+
+    &__content {
+        max-width: 1280px;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    &__text {
+        z-index: 100;
+        max-width: 700px;
+        position: absolute;
+        bottom: 40px;
+        min-height: 100px;
+        background:$main-clr200-T;
+        padding:20px 20px 20px 0;
+        color: $light-clr;
+        h1{
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .jumbotron__text {
+        max-width: 100%;
+
+        h1 {
+         
+        }
+
+        p {
+        
+            line-height: 20px;
+        
+        }
+    }
+}

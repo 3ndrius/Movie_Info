@@ -1,13 +1,14 @@
+
 import React from "react";
-import Logo from '../../assets/logo.png';
 import './header.scss';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
     <header className="header">
       <div className="container">
           <div className="header__navbar">
-            <a href="#" className="header__link"><img src={Logo} alt="app-logo" /></a>
+            <Link to="/" className="header__link">3movie</Link>
             <nav className="header__nav">
             <ul>
               <li>

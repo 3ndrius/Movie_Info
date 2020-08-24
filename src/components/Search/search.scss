@@ -1,0 +1,54 @@
+@import "../../assets/styles/colors.scss";
+
+.search {
+  width: 100%;
+  height: 105px;
+  background: $main-clr100;
+  position: relative;
+  padding: 25px 20px 0px 20px;
+  box-sizing: border-box;
+  color: #fff;
+  z-index: 0;
+
+  &__wrap {
+    max-width: 1280px;
+    width: 100%;
+    height: 55px;
+    background: $main-clr100;
+    margin: 0 auto;
+    border-radius: 1px;
+    position: relative;
+    color: $light-clr;
+  }
+  &__icon {
+    position: absolute;
+    left: 20px;
+    top: 12px;
+    color: $light-clr;
+  }
+
+  &__input {
+    font-size: 38px;
+    position: absolute;
+    left: 70px;
+    top: 7px;
+    border: 0;
+    background: transparent;
+    height: 40px;
+    color: $light-clr;
+    
+    &::placeholder {
+      color: $light-clr100;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .search__input {
+    font-size: 20px;
+    color: #fff;
+  }
+}
