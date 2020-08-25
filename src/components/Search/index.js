@@ -1,6 +1,7 @@
 import React from "react";
 import FontAwesome from "react-fontawesome";
 import "./search.scss";
+import PropTypes from "prop-types";
 
 const Search = ({ handleSearch }) => {
   const [value, setValue] = React.useState("");
@@ -33,3 +34,7 @@ const Search = ({ handleSearch }) => {
 };
 
 export default Search;
+
+Search.propTypes = {
+  handleSearch: PropTypes.func  
+}

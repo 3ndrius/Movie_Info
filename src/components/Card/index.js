@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import PropTypes from 'prop-types';
 
 export default function Card({
   movieId,
@@ -24,3 +25,16 @@ export default function Card({
     </li>
   );
 }
+
+
+
+
+
+Card.propTypes = {
+  movieId: PropTypes.number,
+  movieName: PropTypes.string,
+  image: PropTypes.string,
+  clickable: PropTypes.bool
+}
+
+

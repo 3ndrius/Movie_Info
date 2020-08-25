@@ -1,5 +1,6 @@
 import React from "react";
 import { IMAGE_BASE_URL } from "../../config";
+import PropTypes from 'prop-types';
 
 const Star = ({ actor }) => {
   const POSTER_SIZE = "w154";
@@ -22,3 +23,7 @@ const Star = ({ actor }) => {
 };
 
 export default Star;
+
+Star.propTypes = {
+  actor: PropTypes.object
+}

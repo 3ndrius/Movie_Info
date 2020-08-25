@@ -1,5 +1,6 @@
 import React from "react";
 import "./jumbotron.scss";
+import PropTypes from "prop-types";
 
 const Jumbotron = ({ image, title, text }) => {
   return (
@@ -23,3 +24,10 @@ const Jumbotron = ({ image, title, text }) => {
   );
 };
 export default Jumbotron;
+
+
+Jumbotron.propTypes = {
+  image: PropTypes.string,
+  title: PropTypes.string,
+  text: PropTypes.string
+}

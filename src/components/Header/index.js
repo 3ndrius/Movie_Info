@@ -1,6 +1,7 @@
 import React from "react";
 import "./header.scss";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 export default function Header({ padding }) {
   const padd = "header header--without";
@@ -19,4 +20,7 @@ export default function Header({ padding }) {
       </div>
     </header>
   );
+}
+Header.propTypes = {
+  padding: PropTypes.bool
 }

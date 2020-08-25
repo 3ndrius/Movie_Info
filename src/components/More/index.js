@@ -1,5 +1,6 @@
 import React from "react";
 import "./more.scss";
+import PropTypes from "prop-types";
 
 const More = ({ onClick, text }) => {
   return (
@@ -10,3 +11,8 @@ const More = ({ onClick, text }) => {
 };
 
 export default More;
+
+More.propTypes = {
+  onClick: PropTypes.func,
+  text: PropTypes.string
+}
