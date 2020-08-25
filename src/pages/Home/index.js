@@ -7,6 +7,7 @@ import More from "../../components/More";
 import SkeletonLoading from "../../components/SkeletonLoading";
 import Header from "../../components/Header";
 import { API_URL, API_KEY, IMAGE_BASE_URL, POSTER_SIZE } from "../../config";
+import { motion } from "framer-motion";
 
 class Home extends Component {
   state = {
@@ -87,6 +88,10 @@ class Home extends Component {
   render() {
     return (
       <>
+      <motion.div initial={{x:0,  opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x:0, opacity: 0 }}
+      transition={{ duration: 1}}>
         <Header />
         <Jumbotron
           image={`${IMAGE_BASE_URL}w1280${this.state.heroImage?.backdrop_path}`}
@@ -125,6 +130,7 @@ class Home extends Component {
             <More text="Load More" onClick={this.loadMoreItems} />
           ) : null}
         </main>
+        </motion.div>
       </>
     );
   }

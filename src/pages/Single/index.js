@@ -5,6 +5,7 @@ import "./single.scss";
 import Header from "../../components/Header";
 import Navigation from "../../components/Navigation";
 import Star from "../../components/Star/index";
+import { motion } from "framer-motion"
 
 class Movie extends Component {
   state = {
@@ -60,6 +61,10 @@ class Movie extends Component {
   render() {
     return (
       <>
+      <motion.div  initial={{x:-20,  opacity: 0 }}
+      animate={{ x: 0, opacity: 1 }}
+      exit={{ x:20, opacity: 0 }}
+      transition={{ duration: 1}}>
         <Header padding />
         <Navigation movie={this.props.location.movieName} />
         <div className="single-movie">
@@ -93,6 +98,7 @@ class Movie extends Component {
             </div>
           ) : null}
         </div>
+        </motion.div>
       </>
     );
   }
