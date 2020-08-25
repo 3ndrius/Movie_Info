@@ -1,12 +1,11 @@
 import React, { Component } from "react";
 import "./home.scss";
-import Skeleton from "react-loading-skeleton";
 import Jumbotron from "../../components/Jumbotron";
 import Search from "../../components/Search";
 import Card from "../../components/Card";
 import More from "../../components/More";
 import SkeletonLoading from "../../components/SkeletonLoading";
-
+import Header from "../../components/Header";
 import { API_URL, API_KEY, IMAGE_BASE_URL, POSTER_SIZE } from "../../config";
 
 class Home extends Component {
@@ -88,6 +87,7 @@ class Home extends Component {
   render() {
     return (
       <>
+        <Header />
         <Jumbotron
           image={`${IMAGE_BASE_URL}w1280${this.state.heroImage?.backdrop_path}`}
           title={this.state.heroImage?.original_title}
@@ -97,7 +97,7 @@ class Home extends Component {
           <Search handleSearch={this.searchItems} />
           <div className="container"></div>
           {this.state.loading ? (
-            <SkeletonLoading /> 
+            <SkeletonLoading />
           ) : (
             <ul className="main__list">
               {this.state.movies.map((element, i) => {

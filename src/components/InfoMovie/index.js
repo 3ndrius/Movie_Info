@@ -1,17 +1,16 @@
 import React from "react";
 import { IMAGE_BASE_URL, POSTER_SIZE, BACKDROP_SIZE } from "../../config";
-import FontAwesome from "react-fontawesome";
 import Card from "../Card";
 import "./infoMovie.scss";
-
-const InfoMovie = props => {
+import FontAwesome from "react-fontawesome";
+const InfoMovie = (props) => {
   return (
     <div
       className="movie-info"
       style={{
         background: props.movie.backdrop_path
           ? `url('${IMAGE_BASE_URL}${BACKDROP_SIZE}${props.movie.backdrop_path}')`
-          : "#000"
+          : "#000",
       }}
     >
       <div className="movie-info__content">

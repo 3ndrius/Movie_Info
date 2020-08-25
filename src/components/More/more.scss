@@ -1,4 +1,4 @@
-@import '../../assets/styles/colors.scss';
+@import "../../assets/styles/colors.scss";
 
 .main__more-btn {
   background: $second-clr200;
@@ -8,12 +8,12 @@
   color: $light-clr;
   cursor: pointer;
   transition: all 0.3s;
-    & p {
-  font-size:1.5em;
-  padding: 20px;
-}
+  & p {
+    font-size: 1.5em;
+    padding: 20px;
+  }
 
-&:hover {
-  opacity: 0.8;
-}
+  &:hover {
+    opacity: 0.8;
+  }
 }

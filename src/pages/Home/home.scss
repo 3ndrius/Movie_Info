@@ -20,3 +20,26 @@
         }
     }
 }
+@media (max-width: 978px) {
+    .main {
+        &__list {
+            max-width: 100%;
+            height: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(auto, 1fr));
+            grid-template-rows: auto;
+            list-style-type: none;
+
+            li {
+                width: auto;
+                height: 100%;
+                padding: 5px;
+
+                img {
+                    height: auto;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

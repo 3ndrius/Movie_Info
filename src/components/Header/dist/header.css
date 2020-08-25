@@ -12,8 +12,8 @@
 .header {
   width: 100%;
   height: 80px;
-  background: rgba(3, 5, 94, 0.281);
-  color: #caf0f8ff;
+  background: rgba(3, 5, 94, 0.356);
+  color: #e8fbff;
   background-size: cover;
   position: relative;
   z-index: 100;
@@ -27,6 +27,9 @@
 }
 .header__navbar ul {
   list-style-type: none;
+}
+.header--without {
+  margin-bottom: 0;
 }
 .header__link {
   text-decoration: none;

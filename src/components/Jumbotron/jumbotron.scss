@@ -1,4 +1,4 @@
-@import '../../assets/styles/colors.scss';
+@import "../../assets/styles/colors.scss";
 
 .jumbotron {
     background-size: 100%, cover !important;
@@ -6,7 +6,7 @@
     width: 100%;
     height: 680px;
     position: absolute;
-    top:-80px;
+    top: -80px;
     z-index: 0;
 
     &__content {
@@ -20,10 +20,10 @@
         position: absolute;
         bottom: 40px;
         min-height: 100px;
-        background:$main-clr200-T;
-        padding:20px 20px 20px 0;
+        background: $main-clr200-T;
+        padding: 20px 20px 20px 0;
         color: $light-clr;
-        h1{
+        h1 {
             padding-bottom: 20px;
         }
     }
@@ -32,15 +32,8 @@
 @media screen and (max-width: 720px) {
     .jumbotron__text {
         max-width: 100%;
-
-        h1 {
-         
-        }
-
         p {
-        
             line-height: 20px;
-        
         }
     }
 }

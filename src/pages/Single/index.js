@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { API_URL, API_KEY } from "../../config.js";
 import InfoMovie from "../../components/InfoMovie";
-import './single.scss';
-
+import "./single.scss";
+import Header from "../../components/Header";
+import Navigation from "../../components/Navigation";
+import Star from "../../components/Star/index";
 
 class Movie extends Component {
   state = {
@@ -57,20 +59,41 @@ class Movie extends Component {
 
   render() {
     return (
-      <div className="single-movie">
-        {this.state.movie ? (
-          <div>
-            <InfoMovie
-              movie={this.state.movie}
-              directors={this.state.directors}
-            />
-          </div>
-        ) : null}
-        {this.state.actors ? <div className="single-movie__grid"></div> : null}
-        {!this.state.actors && !this.state.loading ? (
-          <h1>No Movie Found!</h1>
-        ) : null}
-      </div>
+      <>
+        <Header padding />
+        <Navigation movie={this.props.location.movieName} />
+        <div className="single-movie">
+          {this.state.movie ? (
+            <div>
+              <InfoMovie
+                movie={this.state.movie}
+                directors={this.state.directors}
+              />
+            </div>
+          ) : null}
+          {this.state.actors ? (
+            <div className="single-movie__grid"></div>
+          ) : null}
+          {!this.state.actors && !this.state.loading ? (
+            <h1>No Movie Found!</h1>
+          ) : null}
+          {this.state.actors ? (
+            <div className="single-movie__grid">
+              <ul className="single-movie__list">
+                {this.state.actors.map((element, i) => {
+                  return (
+                    <Star
+                      key={i}
+                      actor={element}
+                      loading={this.state.loading}
+                    />
+                  );
+                })}
+              </ul>
+            </div>
+          ) : null}
+        </div>
+      </>
     );
   }
 }

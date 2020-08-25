@@ -1,0 +1,30 @@
+@import '../../assets/styles/colors.scss';
+
+.single-movie__item {
+  box-sizing: border-box;
+
+  img {
+    width: 40%;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+  }
+
+  .single-movie__name {
+    font-size: 1.5em;
+    color: $light-clr;
+    float: left;
+    margin: 10px 20px;
+    width: 40%;
+    box-sizing: border-box;
+  }
+
+  .single-movie__character {
+    font-size: 18px;
+    color: $light-clr;
+    float: left;
+    margin: 0 20px 10px 20px;
+    width: 40%;
+    box-sizing: border-box;
+  }
+}
