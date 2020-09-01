@@ -1,12 +1,11 @@
 # MOVIE APP
 Single page application that allows user to search movie and display detailed info about it.
 
-
-
 ## Functions
 - display list of movies
 - search movie by title
 - display specific movie details (casts, directors, rate)
+- load more movies
 
 [Demo](https://github.com/facebook/create-react-app)
 

@@ -61,9 +61,9 @@ class Movie extends Component {
   render() {
     return (
       <>
-      <motion.div  initial={{x:-20,  opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-      exit={{ x:20, opacity: 0 }}
+      <motion.div  initial={{y:-10,  opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y:10, opacity: 0 }}
       transition={{ duration: 1}}>
         <Header padding />
         <Navigation movie={this.props.location.movieName} />
