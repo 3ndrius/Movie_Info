@@ -1,13 +1,18 @@
 # MOVIE APP
 Single page application that allows user to search movie and display detailed info about it.
 
+<<<<<<< HEAD
+=======
+![prev](https://github.com/3ndrius/Movie-app/blob/master/public/images/gifted-panini-3b4fc8.netlify.app_475557.png?raw=true)
+
+>>>>>>> a88d34fa28a814c755b52a80a3d265f713c12a15
 ## Functions
 - display list of movies
 - search movie by title
 - display specific movie details (casts, directors, rate)
 - load more movies
 
-[Demo](https://github.com/facebook/create-react-app)
+[Demo](https://gifted-panini-3b4fc8.netlify.app)
 
 ## Stack
 
