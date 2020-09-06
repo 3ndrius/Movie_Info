@@ -1,7 +1,8 @@
 # MOVIE APP
+
 Single page application that allows user to search movie and display detailed info about it.
 
-![prev](https://github.com/3ndrius/Movie-app/blob/master/public/images/gifted-panini-3b4fc8.netlify.app_475557.png?raw=true)
+![prev](https://raw.githubusercontent.com/3ndrius/Movie_Info/master/movie_mini.jpg?token=AFY4HYJMIN5SMF5PREZ7Y4S7KVEXC)
 
 ## Functions
 - display list of movies
@@ -46,3 +47,5 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     -e CHOKIDAR_USEPOLLING=true \
     sample:dev
   `
+  
+  ![prev](https://github.com/3ndrius/Movie-app/blob/master/public/images/gifted-panini-3b4fc8.netlify.app_475557.png?raw=true)
