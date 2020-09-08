@@ -2,8 +2,6 @@
 
 Single page application that allows user to search movie and display detailed info about it.
 
-![prev](https://raw.githubusercontent.com/3ndrius/Movie_Info/master/movie_mini.jpg?token=AFY4HYJMIN5SMF5PREZ7Y4S7KVEXC)
-
 ## Functions
 - display list of movies
 - search movie by title
@@ -21,6 +19,9 @@ Single page application that allows user to search movie and display detailed in
 - sass
 - fetch 
 
+## SCREEN
+
+![prev](https://raw.githubusercontent.com/3ndrius/Movie_Info/master/movie_mini.jpg?token=AFY4HYJV3WDGV7RDFH7AQOC7K7GVQ)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -47,5 +48,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
     -e CHOKIDAR_USEPOLLING=true \
     sample:dev
   `
+  ## SCREEN
   
   ![prev](https://github.com/3ndrius/Movie-app/blob/master/public/images/gifted-panini-3b4fc8.netlify.app_475557.png?raw=true)
