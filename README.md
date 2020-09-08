@@ -21,7 +21,7 @@ Single page application that allows user to search movie and display detailed in
 
 ## SCREEN
 
-![prev](https://raw.githubusercontent.com/3ndrius/Movie_Info/master/movie_mini.jpg?token=AFY4HYJV3WDGV7RDFH7AQOC7K7GVQ)
+![prev](https://github.com/3ndrius/Movie_Info/blob/master/movie_mini.jpg?raw=true)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
